@@ -16,4 +16,9 @@ export default defineConfig({
       outDir: "dist",
     },
   },
+  esbuild: {
+    jsxInject: `import React from 'react'`,
+    jsxFactory: "React.createElement",
+    jsxFragment: "React.Fragment",
+  },
 });
