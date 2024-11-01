@@ -11,10 +11,11 @@ body {
   margin: 0;
   /* font-family: "Inria Sans", sans-serif; */
   color: #ffffff;
+  height: auto;
 }
 
 .App {
-  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -231,80 +232,6 @@ body {
   }
 }
 
-@media (max-width: 750px) {
-  .additional-text {
-    width: 90%;
-  }
-  .additional-text div {
-    font-size: xx-small;
-  }
-}
-
-@media (max-width: 610px) {
-  .additional-text {
-    max-width: 70%;
-  }
-  .additional-text {
-    font-size: 1px;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 400px) {
-  .main-content .fot {
-    display: flex;
-  }
-  .main-content .fot div {
-    font-size: 5px;
-  }
-  .main-content .fot p {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 700px) {
-  .main-content .fot div {
-    font-size: 10px;
-  }
-  .main-content .fot p {
-    font-size: 30px;
-  }
-}
-@media (max-width: 611px) {
-  .main-content .fot div {
-    font-size: 10px;
-  }
-  .main-content .fot p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 536px) {
-  .main-content .fot div {
-    font-size: 10px;
-  }
-  .main-content .fot p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 490px) {
-  .main-content .fot div {
-    font-size: 5px;
-  }
-  .main-content .fot p {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 490px) {
-  .main-content .fot div {
-    font-size: 5px;
-  }
-  .main-content .fot p {
-    font-size: 8px;
-  }
-}
-
 .fade-enter {
   opacity: 0;
 }
@@ -348,7 +275,7 @@ body {
 } */
 
 .additional-text {
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   margin-bottom: 100px;
@@ -356,6 +283,13 @@ body {
   width: 100%;
   display: flex;
   text-align: left;
+  margin-top: 200px;
+  padding: 20px;
+  padding-top: 200px;
+  overflow: hidden;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  margin-left: -20px;
 }
 
 .additional-text p {
@@ -369,17 +303,106 @@ body {
   font-weight: lighter;
 }
 
-@media (max-width: 555px) {
+@media (max-width: 1183px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1114px) {
   .additional-text {
     margin-top: 100px;
     width: auto;
     position: static;
   }
+  .additional-text div {
+    font-size: 15px;
+  }
+  .additional-text p {
+    font-size: 25px;
+  }
 }
 
-@media (min-width: 1020px) {
+@media (max-width: 951px) {
   .additional-text {
-    margin-top: 10px;
+    margin-top: 100px;
     width: auto;
+    position: static;
+    margin-left: -20px;
+  }
+  .additional-text div {
+    font-size: 10px;
+  }
+  .additional-text p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 770px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+    margin-left: -20px;
+  }
+  .additional-text div {
+    font-size: 10px;
+  }
+  .additional-text p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 770px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+    margin-left: -20px;
+  }
+  .additional-text div {
+    font-size: 7px;
+  }
+  .additional-text p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+    margin-left: -20px;
+  }
+  .additional-text div {
+    font-size: 5px;
+  }
+  .additional-text p {
+    font-size: 9px;
+  }
+  .background-image {
+    position: absolute;
+  }
+}
+
+@media (max-width: 393px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+    margin-left: -20px;
+  }
+  .additional-text div {
+    font-size: 4px;
+  }
+  .additional-text p {
+    font-size: 6px;
+  }
+  .background-image {
+    margin-top: 1000px;
   }
 }

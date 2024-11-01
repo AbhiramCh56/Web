@@ -107,6 +107,10 @@ function Home() {
             Average <br />
             Story Views
           </div>
+          <p>| 300+ </p>
+          <div>Influencers</div>
+          <p>| 50+ </p>
+          <div>Brands</div>
         </div>
       </div>
     </main>
